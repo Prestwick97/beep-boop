@@ -1,10 +1,12 @@
 $(document).ready(function(){
   //Business Logic
-  // var output = ("#output").text();
+  var output = ("#output").text();
   var three = "I'm sorry, Dave. I'm afraid I can't do that."
   var two = "Boop!"
   var one = "Beep!"
-  var inputNum = ("#inputNum").split("");
+  var input = $("input#inputNum").val();
+  var inputNum = input.split();
+  console.log(inputNum);
   for(var i = 0; inputNum.length; i++) {
     if (i==3) {
 console.log(three);
@@ -16,7 +18,7 @@ console.log(three);
       console.log(one);
     }
     else {
-      console.log(inputnum.length);
+      // console.log(inputNum.length);
     }
   }
 
