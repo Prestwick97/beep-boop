@@ -2,9 +2,18 @@ $(document).ready(function(){
   var HAL = function(number){
     var output = [];
     for(var i = 0; i <= number; i++){
-      var numOut = i.toString()
+      var numOut = i.toString();
+      if (numOut === 3) {
+        output.push(three);
+      };
+      else if(numOut === 2) {
+        output.push(two);
+      };
+      else if(numOut === 1) {
+        output.push(one);
+      }
     }
-  }
+  };
 
 
 
