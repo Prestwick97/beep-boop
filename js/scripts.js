@@ -1,6 +1,7 @@
 $(document).ready(function(){
   var HAL = function(number){
-    var output = [];
+    var output = []; 
+    var three = "I'm sorry, Dave. I'm afraid I can't do that."
     for(var i = 0; i <= number; i++){
       var numOut = i.toString();
       if (numOut === 3) {
@@ -8,14 +9,16 @@ $(document).ready(function(){
       };
       else if(numOut === 2) {
         output.push(two);
+        var two = "Boop!"
       };
       else if(numOut === 1) {
+        var one = "Beep!"
         output.push(one);
       }
     }
-  };
+  }
 
-
+  console.log(HAL(output));
 
 
 
@@ -24,10 +27,7 @@ $(document).ready(function(){
 
 
   //   //Business Logic
-//   var output = ("#output").text();
-//   var three = "I'm sorry, Dave. I'm afraid I can't do that."
-//   var two = "Boop!"
-//   var one = "Beep!"
+//   var output = ("#output").text()
 //   var input = $("input#inputNum").val();
 //   var inputNum = input.split();
 //   console.log(inputNum);
