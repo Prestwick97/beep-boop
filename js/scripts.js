@@ -4,8 +4,8 @@ $(document).ready(function(){
   var three = "I'm sorry, Dave. I'm afraid I can't do that."
   var two = "Boop!"
   var one = "Beep!"
-  var inputNum = ("input#inputNum").val();
-  for(var i = 0; inputNum.length(); i++) {
+  var inputNum = ("#inputNum").split("");
+  for(var i = 0; inputNum.length; i++) {
     if (i==3) {
 console.log(three);
     }
@@ -16,7 +16,7 @@ console.log(three);
       console.log(one);
     }
     else {
-      console.log(i);
+      console.log(inputnum.length);
     }
   }
 
