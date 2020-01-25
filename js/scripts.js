@@ -8,7 +8,7 @@ $(document).ready(function(){
       if (numOut === 3) {
         output.push(three);
       };
-        else if(numOut === 2) { //Can't figure out ehy else if statements aren't working
+      else if(numOut === 2) { //Can't figure out why else if statements aren't working
         output.push(two);
         var two = "Boop!"
       };
@@ -21,7 +21,7 @@ $(document).ready(function(){
       }
       console.log(output);
       //return(output);
-    };
+    });
    
   };
 
