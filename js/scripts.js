@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  //Business Logic
   var HAL = function(number){
     var output = []; 
     var three = "I'm sorry, Dave. I'm afraid I can't do that."
@@ -7,47 +8,32 @@ $(document).ready(function(){
       if (numOut === 3) {
         output.push(three);
       };
-      else if(numOut === 2) {
+        else if(numOut === 2) { //Can't figure out ehy else if statements aren't working
         output.push(two);
         var two = "Boop!"
       };
       else if(numOut === 1) {
         var one = "Beep!"
         output.push(one);
+      };
+      else {
+        output.push(i)
       }
-    }
-  }
+      console.log(output);
+      //return(output);
+    };
+   
+  };
 
   console.log(HAL(output));
 
 
 
-
-
-
-
-  //   //Business Logic
-//   var output = ("#output").text()
-//   var input = $("input#inputNum").val();
-//   var inputNum = input.split();
-//   console.log(inputNum);
-//   for(var i = 0; inputNum.length; i++) {
-//     if (i==3) {
-// console.log(three);
-//     }
-//     else if (i ===2) {
-//       console.log(two);
-//     }
-//     else if (i===1) {
-//       console.log(one);
-//     }
-//     else {
-//       // console.log(inputNum.length);
-//     }
-//   }
-
+var input = $("input#inputNum").val
   //Interface Logic
   $("form#formOne").submit(function(event){
     event.preventDefault();
-  })
+  $("#resultOutput").text(HAL(input));
+
+  });
 });
