@@ -6,14 +6,14 @@ $(document).ready(function(){
   var two = "Boop!"
   var three = "I'm sorry, Dave. I'm afraid I can't do that."
   var HAL = function(number){
-    if(number==1){
-      console.log(one);
+    if(number == 3){
+      console.log(three);
     }
     else if (number == 2){
       console.log(two)
     }
-    else if (number == 3){
-      console.log(three);
+    else if (number==1){
+      console.log(one);
     }
     else {
       number.split("")
