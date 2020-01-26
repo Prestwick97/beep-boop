@@ -20,4 +20,5 @@ $(document).ready(function(){
       console.log(number);
     }
   }
+  console.log(HAL(input));
 });
