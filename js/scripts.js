@@ -8,19 +8,21 @@ $(document).ready(function(){
 
   var HAL = function(number){
     for (var i = 0; i <= number; ++i ){
-      if(number == 3){
-        console.log(three);
+      if(number === 3){
+        output.push(three);
       }
-      else if (number == 2){
-        console.log(two)
+      else if (number === 2){
+        output.push(two);
       }
-      else if (number == 1){
-        console.log(one);
+      else if (number === 1){
+        output.push(one);
       }
       else {
-        console.log(number);
+        output.push(input);
       }
     }
   }
-  console.log(HAL(input));
+  HAL(input);
+  console.log(output);
+
 });
