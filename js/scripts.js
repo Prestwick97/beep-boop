@@ -1,39 +1,8 @@
 $(document).ready(function(){
-  //Business Logic
-  var HAL = function(number){
-    var output = []; 
-    var three = "I'm sorry, Dave. I'm afraid I can't do that."
-    for (var i = 0; i <= number; i++){
-      var numOut = i.toString();
-      if (numOut === 3) {
-        output.push(three);
-      }
-      else if(numOut === 2) {
-        output.push(two);
-        var two = "Boop!"
-      }
-      else if(numOut === 1) {
-        var one = "Beep!"
-        output.push(one);
-      }
-      else {
-        output.push(i)
-      };
-      console.log(output);
-    }
-   
-  };
-
-
-HAL(input);
-
-
-var input = $("input#inputNum").val
-  //Interface Logic
-  $("form#formOne").submit(function(event){
-    event.preventDefault();
-    console.log(input);
-  // $("#resultOutput").text(input);
-
-  });
+  //business logic
+  var input = prompt("Please enter a number:").split("");
+  var output = [];
+  var one = "Beep!"
+  var two = "Boop!"
+  var three = "I'm sorry, Dave. I'm afraid I can't do that."
 });
