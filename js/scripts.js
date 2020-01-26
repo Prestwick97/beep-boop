@@ -7,7 +7,7 @@ $(document).ready(function(){
   var three = "I'm sorry, Dave. I'm afraid I can't do that."
 
   var HAL = function(number){
-    for (var i = 0; i <= number; ++i ){
+    for (var i = 0; i <= number.length(); ++i ){
       if(number == 3){
         console.log(three);
       }
@@ -21,6 +21,6 @@ $(document).ready(function(){
         console.log(number);
       }
     }
-    console.log(HAL(input));
   }
+  console.log(HAL(input));
 });
