@@ -1,7 +1,7 @@
 $(document).ready(function(){
   //business logic
-  var input = parseInt(prompt("Please enter a number:"));
-  var inputArr = input.split("");
+  var input = prompt("Please enter a number:").split("");
+  var inputNum = parseInt(input);
   var output = [];
   var one = "Beep!";
   var two = "Boop!";
@@ -16,23 +16,23 @@ $(document).ready(function(){
   //   }
   // }
   var HAL = function(number){
-    for (var i = 1; i <= number; ++i ){
-      if(i == 3){
+    for (var i = 1; i <= number; i++ ){
+      if(i === 3){
         output.push(three);
       }
-      else if (i == 2){
+      else if (i === 2){
         output.push(two);
       }
-      else if (i == 1){
+      else if (i === 1){
         output.push(one);
       }
       else {
-        output.push(input);
+        output.push(i);
       }
     }
   }
 
-  HAL(input);
+  HAL(inputNum);
   console.log(output);
 
 });
