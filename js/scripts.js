@@ -13,13 +13,13 @@ $(document).ready(function(){
   // }
   var HAL = function(number){
     for(var i = 1; i <= number; i++ ){
-      if(i === 3){
+      if(i.tostring.includes("3")){
         output.push("I'm sorry, Dave. I'm afraid I can't do that.");
       }
-      else if(i === 2){
+      else if(i.tostring.includes("2")){
         output.push("Boop!");
       }
-      else if(i === 1){
+      else if(i.tostring.includes("1")){
         output.push("Beep!");
       }
       else {
