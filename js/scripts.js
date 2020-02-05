@@ -26,7 +26,7 @@ $(document).ready(function(){
           output.push(" Beep!");
         }
         else{
-        output.push(i)
+        output.push(" " + i)
         }
       }
     }
