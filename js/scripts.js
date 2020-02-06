@@ -1,6 +1,6 @@
 //business logic
-var output = [];
 var HAL = function(number){
+  var output = [];
   for(var i = 1; i <= number; ++i){
     var str = i.toString();
     if(str.includes(3)){
@@ -15,7 +15,7 @@ var HAL = function(number){
     else{
       output.push(" " + i)
     }
-  } 
+  } return output;
 }
 
 // User Interface
@@ -24,7 +24,7 @@ $(document).ready(function(){
     event.preventDefault();
     var input = $("#inputNum").val().split(" ");
     var inputNum = parseInt(input);
-    HAL(inputNum);
-    $("#resultOutput").text(output);
+    
+    $("#resultOutput").text(HAL(inputNum));
   });
 });
